@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en_BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=0.8, maximum-scale=1.6, initial-scale=1.0"
+    />
+
+    <title>SHIKHO APP LINK PROJECT</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="shortcut icon"
+      href="./css/icons/shikho_icon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-containers">
+        <div class="subject-input">
+          <select
+            name="subject-label"
+            id="subject_input"
+            onchange="onSubjectChange()"
+          >
+            <option value="ss">Select a Subject</option>
+          </select>
+        </div>
+        <hr />
+        <div class="chapter-input">
+          <select
+            name="chapter-label"
+            id="chapter_input"
+            onchange="onChapterChange()"
+            disabled
+          >
+            <option value="sf">Choose a Subject First</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="classes-container">
+      <table>
+        <thead>
+          <th>Class</th>
+          <th>Duration</th>
+          <th>Type</th>
+          <th>Size</th>
+          <th>URL</th>
+        </thead>
+        <tbody id="table-classes"></tbody>
+      </table>
+    </div>
+
+    <div id="show"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="./js/firebase-config.js"></script>
+    <script src="./js/subjectDB.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
