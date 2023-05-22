@@ -29,9 +29,8 @@ select {
   border: none;
   font-size: 1.5rem;
   color: #555;
-  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-  outline: none;
+
+outline: none;
 }
 
 select:disabled {
