@@ -51,6 +51,7 @@ function onSubjectChange() {
   } else {
     cInput.disabled = true;
     cInput.children[0].innerText = "Choose a Subject First";
+    cInput.value = "sf";
   }
 }
 
