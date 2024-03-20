@@ -95,7 +95,7 @@ function addClasses(classDoc, docReference) {
 function onChapterChange() {
   let selectedSubject = document.getElementById("subject_input").value;
   let selectedChapter = document.getElementById("chapter_input").value;
-  if (selectedChapter !== "sc") {
+  if (selectedChapter !== "sf") {
     removeClasses();
     showClasses(selectedSubject, selectedChapter);
   }
