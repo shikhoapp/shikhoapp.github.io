@@ -49,9 +49,9 @@ function onSubjectChange() {
     removeChapters();
     addChaptersAccordingToSubjects(selectedSubject);
   } else {
-    cInput.disabled = true;
     cInput.children[0].innerText = "Choose a Subject First";
     cInput.value = "sf";
+    cInput.disabled = true;
   }
 }
 
